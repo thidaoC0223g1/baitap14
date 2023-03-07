@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh ham 1 bai 1</title>
+</head>
+<body>
+<h2>Temperature converter</h2>
+<h4>Type a value in Fahrenheit field to covert the value to Celcius</h4>
+<label> Fahrenheit </label><input type="number" placeholder="Fahrenheit"
+                                  oninput="tempCvt(this.value)">
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+
+    // function processConfirm(answer) {
+    //     let result = "";
+    //     if (answer) {
+    //         result = "Excellent. We'll play a nice game of chess.";
+    //     } else {
+    //         result = "Maybe later then.";
+    //     }
+    //     return result;
+    // }
+    //
+    // let confirmAnswer = confirm("Shall we play a game?");
+    // let theAnswer = processConfirm(confirmAnswer);
+    // alert(theAnswer);
+
+
+    function tempCvt(num) {
+        let tempnum = parseFloat(num);
+        document.getElementById('outputCelcius').innerHTML = (tempnum - 32) / 1.8
+    }
+
+
+    // let arr1 = [3, 5, 1, 8, -3, 7, 8]
+    //
+    // let arr2 = [7, 12, 6, 9, 20, 56, 89]
+    //
+    // let arr3 = []
+    //
+    // let arr4 = [0, 0, 0, 0, 0, 0]
+    //
+    // function minArr(arr) {
+    //     if (arr.length === 0) {
+    //         return -1;
+    //     } else {
+    //         let min = arr[0]
+    //         for (let i = 0; i < arr.length; i++) {
+    //             if (min > arr[i]) {
+    //             }
+    //             min = arr[i];
+    //         }
+    //         return min;
+    //     }
+    // }
+    // console.log(minArr(arr4));
+
+</script>
+</body>
+</html>
